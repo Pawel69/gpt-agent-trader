@@ -16,4 +16,4 @@ async def run_trading_strategy(request: SymbolRequest, x_token: str = Header(...
         raise HTTPException(status_code=401, detail="Invalid token")
 
     result = run_strategy(request.symbol)
-    return {"message": result}
+    return {"status": "success", "symbol": request.symbol, "details": result}
