@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # 1. Aktywacja środowiska
 echo "▶️ Aktywuję środowisko virtualne..."
